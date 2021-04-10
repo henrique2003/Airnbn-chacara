@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+  --lightGreen: #4FD43B;
+  --green: #46BB34;
+  --dark: rgba(0,0,0,0.8);
+  --lightDark: rgba(0,0,0,0.75);
+  --grey: rgba(0,0,0,0.5);
+}
+
+body {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  outline: none;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+main {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+header h1 {
+  font-size: 30px;
+  margin-top: 50px;
+  color: var(--dark);
+  font-weight: 500;
+  margin-bottom: 0;
+  line-height: 35px;
+}
+
+header p {
+  font-size: 23px;
+  color: var(--grey);
+  margin: 0;
+  margin-top: 10px;
+}
+
+header .local {
+  display: flex;
+}
+
+header .local p {
+  color: var(--lightDark);
+  font-size: 20px;
+}
+
+header .local p:nth-child(2) {
+  color: var(--grey);
+  font-size: 19px;
+  border-bottom: 2px solid var(--grey);
+  font-weight: bold;
+  margin-left: 30px;
+  height: 25px;
+}
+
+header .local p span{
+  color: var(--lightGreen);
+}
+
+@media(max-width: 1250px) {
+  main {
+    padding: 0 30px;
+  }
+}
+
+@media(max-width: 768px) {
+  header h1 {
+    font-size: 26px;
+    line-height: 30px;
+  }
+
+  header p {
+    font-size: 20px;
+    margin-top: 10px;
+  }
+  
+  header .local p {
+    font-size: 17px;
+  }
+  
+  header .local p:nth-child(2) {
+    font-size: 16px;
+    height: 20px;
+  }
+}
+
+@media(max-width: 630px) {  
+  header .local {
+    flex-direction: column;
+  }
+  
+  header .local p:nth-child(2) {
+    font-size: 16px;
+    height: 20px;
+    max-width: 200px;
+    margin-left: 0;
+  }
+}
