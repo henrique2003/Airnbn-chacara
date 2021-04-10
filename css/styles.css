@@ -8,12 +8,16 @@
   --grey: rgba(0,0,0,0.5);
 }
 
+* {
+  outline: none !important;
+}
+
 body {
   border: 0;
   padding: 0;
   margin: 0;
-  outline: none;
   box-sizing: border-box;
+  box-shadow: none;
   font-family: 'Poppins', sans-serif;
 }
 
@@ -23,6 +27,7 @@ main {
   margin: 0 auto;
 }
 
+/* HEDAER */
 header h1 {
   font-size: 30px;
   margin-top: 50px;
@@ -61,7 +66,291 @@ header .local p span{
   color: var(--lightGreen);
 }
 
+/* PLACE */
+/* SLICK */
+.slick-prev {
+  left: 25px;
+}
+
+.slick-next {
+  right: 25px;
+}
+
+.slick-list {
+  z-index: -1;
+}
+
+.place {
+  margin-top: 40px;
+  display: flex;
+}
+
+.place .slider {
+  max-width: 700px;
+  width: 100%;
+}
+
+.place .slider div {
+  border-radius: 10px;
+}
+
+.place .slider div img {
+  width: 100%;  
+  height: 500px;
+}
+
+.place article {
+  max-width: 450px;
+  width: 100%;
+  border-radius: 5px;
+  margin-left: 50px;
+  border: 1px solid var(--grey);
+  padding: 30px 40px;
+  max-height: 440px;
+}
+
+.place article p {
+  font-size: 22px;
+  color: var(--dark);
+  padding-bottom: 3px;
+  border-bottom: 1px solid var(--lightGreen);
+  max-width: 150px;
+  width: 100%;
+  margin: 0;
+}
+
+.place article p span {
+  font-size: 20px;
+  color: var(--grey);
+}
+
+.place article p:nth-child(2) {
+  color: var(--grey);
+  font-size: 18px;
+  max-width: 100%;
+  border-bottom: none;
+  margin-top: 5px;
+  color: var(--lightDark);
+}
+
+.place article .bedroom {
+  margin-top: 20px;
+}
+
+.place article .bedroom img {
+  width: 70px;
+  height: 70px;
+}
+
+.place article .bedroom p {
+  border: none;
+  font-size: 17px;
+  color: var(--dark);
+  margin: 0;
+  max-width: 100%;
+}
+
+.place article .bedroom p span {
+  color: var(--grey);
+  font-size: 15px;
+}
+
+.place article .hr {
+  width: 100%;
+  border-radius: 5px;
+  background-color: var(--grey);
+  height: 1px;
+  margin-top: 40px;
+  margin-bottom: 35px;
+}
+
+.trace {
+  max-width: 400px;
+  width: 100%;
+  height: 1px;
+  background: var(--grey);
+  margin: 60px 0;
+}
+
+/* ABOUT */
+.about h3 {
+  font-weight: normal;
+  font-size: 22px;
+  color: var(--dark);
+}
+
+.about p {
+  margin: 0;
+  font-size: 16px;
+  color: var(--lightDark);
+}
+.about h4 {
+  margin: 0;
+  color: var(--green);
+  font-size: 17px;
+  font-weight: normal;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+/* AMENITIES */
+.amenities h3 {
+  font-weight: normal;
+  font-size: 22px;
+  color: var(--dark);
+}
+
+.amenities .row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 60px;
+}
+
+.amenities .row .column p {
+  font-size: 19px;
+  color: var(--green);
+  margin-bottom: 5px;
+  margin-top: 0;
+}
+
+.amenities .row .column p span {
+  color: var(--dark);
+  margin-right: 5px;
+}
+
+.amenities .row .column ul {
+  list-style: none;
+  margin: 0;
+  margin-top: 10px;
+  padding: 0;
+  padding-left: 2px;
+}
+
+.amenities .row .column ul li {
+  font-size: 16px;
+  color: var(--dark);
+  margin-top: 7px;
+  display: flex;
+}
+
+.amenities .row .column ul li .point {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  margin-right: 15px;
+  margin-top: 9px;
+  background: var(--lightGreen);
+}
+
+.rules_of_house h3 {
+  font-weight: normal;
+  font-size: 22px;
+  color: var(--dark);
+}
+
+.rules_of_house .row {
+  margin-top: 10px;
+  padding-left: 2px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.rules_of_house .row p {
+  font-size: 17px;
+  color: var(--dark);
+  margin-top: 7px;
+}
+
+.rules_of_house .row p img { 
+  margin-right: 10px;
+  margin-bottom: -8px;
+  width: 30px;
+  height: 30px;
+}
+
+.rules_of_house .row p:nth-child(5) img { 
+  margin-bottom: -3px;
+}
+
+.comments {
+  margin-bottom: 50px;
+}
+
+.comments h3 {
+  font-weight: normal;
+  font-size: 22px;
+  color: var(--dark);
+}
+
+.comments .row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 40px;
+  margin-top: 15px;
+}
+
+.comments .row .column {
+  display: flex;
+}
+
+.comments .row .column img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-right: 25px;
+  margin-top: 25px;
+}
+
+.comments .row .column p {
+  color: var(--grey);
+  font-size: 17px;
+  max-width: 400px;
+  width: 100%;
+}
+
+.comments .row .column h5 {
+  color: var(--green);
+  font-size: 18px;
+  margin-top: 0;
+  font-weight: normal;
+}
+
+/* MEDIAS */
 @media(max-width: 1250px) {
+  main {
+    max-width: 800px;
+  }
+
+  .place {
+    flex-direction: column;
+  }
+
+  .place .slider {
+    max-width: 100%;
+  }
+
+  .place article {
+    margin: 0;
+    margin-top: 30px;
+    max-width: 100%;
+    padding: 0;
+    max-height: none;
+  }
+
+  .place article section {
+    padding: 30px 40px;
+  }
+
+  .place .slider div img {
+    height: auto;
+  }
+
+  .amenities .row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media(max-width: 800px) {
   main {
     padding: 0 30px;
   }
@@ -86,6 +375,32 @@ header .local p span{
     font-size: 16px;
     height: 20px;
   }
+
+  .about h3 {
+    font-size: 20px;
+  }
+  
+  .about p {
+    font-size: 15px;
+  }
+  .about h4 {
+    font-size: 16px;
+  }
+
+  .rules_of_house .row {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  
+  .comments .row {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  
+  .comments .row .column div p {
+    max-width: 100%;
+    margin: 0;
+    margin-top: 25px;
+  }
 }
 
 @media(max-width: 630px) {  
@@ -98,5 +413,64 @@ header .local p span{
     height: 20px;
     max-width: 200px;
     margin-left: 0;
+  }
+    
+  .place article section {
+    padding: 25px 30px;
+  }
+
+  .place article p {
+    font-size: 20px;
+  }
+
+  .place article p span {
+    font-size: 18px;
+  }
+
+  .place article p:nth-child(2) {
+    font-size: 17px;
+    margin-top: 5px;
+  }
+
+  .place article .bedroom {
+    margin-top: 20px;
+  }
+
+  .place article .bedroom img {
+    width: 65px;
+    height: 65px;
+  }
+
+  .place article .bedroom p {
+    font-size: 16px;
+  }
+
+  .place article .hr {
+    margin-top: 30px;
+    margin-bottom: 25px;
+  }
+  
+  .about h3 {
+    font-size: 19px;
+  }
+  
+  .about p {
+    font-size: 14px;
+  }
+  .about h4 {
+    font-size: 15px;
+  }
+  
+  .amenities .row {
+    grid-template-columns: repeat(1, 1fr);
+  } 
+
+  .rules_of_house .row p {
+    font-size: 16px;
+  }
+
+  .rules_of_house .row p img {
+    width: 25px;
+    height: 25px;
   }
 }
